@@ -2,21 +2,21 @@ package edu.handong.csee.java.lab06;
 import java.util.Scanner;
 
 public class Cesco {
-	   final double GROWTH_RATE = 0.95; 
-	   final double ONE_BUG_VOLUME = 0.002; 
+	   final double GROWTH_RATE = 0.95; //fix a one bug's Growth rate after the one week 
+	   final double ONE_BUG_VOLUME = 0.002; //fix a one bug's bug_volume
 	   
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Cesco mycesco = new Cesco(); // instantiate Cesco class to use mycesco
-	    mycesco.computeNumberOfBugKiller();
+		Cesco mycesco = new Cesco(); // Use Cesco class's method as mycesco 
+	    mycesco.computeNumberOfBugKiller(); // use computeNumberofbugkiller function in main 
 	}
 	    public void computeNumberOfBugKiller() {
 	        
-	        Scanner keepwork = new Scanner(System.in); // instantiate Scanner class to use keepwork
-	        System.out.print("Enter the houseVolume"); // call print 
+	        Scanner keepwork = new Scanner(System.in); // Creat scanner object keepwork and ready to input the contents
+	        System.out.print("Enter the houseVolume"); // print the "Enter the houseVolume" 
 	        
-	        double houseVolume = keepwork.nextDouble(); // put value that user input to houseVolume
+	        double houseVolume = keepwork.nextDouble(); // 	
 	        System.out.print("Enter the bug's population at first");// call print method to print-out string
 	        double startPopulation = keepwork.nextDouble(); // put value that user input to startPopulation, that use roach's population at first
 	        double population = startPopulation; // this is used counting roach's number
